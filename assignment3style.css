@@ -1,0 +1,54 @@
+
+
+/*headings*/
+h1 {
+    color: green;
+    background-color: rgb(118, 198, 118);
+}
+
+h2 {
+    color: darkolivegreen;
+    background-color: lightgray;
+}
+
+h3 {
+    color:rgb(136, 170, 68);
+    background-color: rgb(255, 255, 177);
+}
+
+h4 {
+    color:black;
+}
+
+/*end of headings*/
+
+main {
+    color:grey;
+}
+
+.highlight {
+    background-color: rgb(190, 235, 124);
+    font-weight: bold;
+}
+
+/*links*/
+
+a {
+    color:#ff0000;
+    text-decoration: none;
+}
+
+a:link {
+    color:#ff0000;
+}
+
+a:visited {
+    color:green;
+}
+
+a:hover {
+    color:yellow;
+    text-decoration: underline;
+}
+
+/*end of links*/

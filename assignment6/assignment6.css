@@ -1,0 +1,115 @@
+body {
+    background: white url(a62.png) repeat center center;
+}
+
+#wrapper {
+    background-color: white;
+    border: 3px solid black;
+    width: 900px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(10,1fr); 
+    grid-template-rows: 100px auto auto;
+}
+
+header {
+    grid-column: span 10;
+}
+
+h1 {
+    margin: 10px 10px;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-weight: normal;
+    padding: 25px;
+}
+
+/* nav */
+
+nav {
+    padding: 0 10px;
+    grid-column: span 2;   
+    grid-row: 2;          
+}
+
+nav ul {
+    list-style-type: none; 
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav li {
+    width: 190px;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    display: block;
+    padding: 15px;
+    background-color: red;
+}
+
+nav li a:hover {
+    background-color: darkred; 
+}
+
+/* end of nav*/
+
+main {
+    padding-left: 30px;
+    grid-column: span 8;  
+    grid-row: 2;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    border-bottom: solid 3px black;
+    display: inline-block;
+    padding: 5px;
+    width: 600px;
+}
+
+.floatimg {
+    margin-right: 10px;
+    border: 3px solid black;
+    float: left;
+    padding: 10px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding: 0 10px 10px;   
+}
+
+.georgia-bold {
+    font-weight: bold;
+    text-align: justify;
+}
+
+p a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    border-top: 3px solid black;
+    grid-row: 3;
+    grid-column: span 10;
+}

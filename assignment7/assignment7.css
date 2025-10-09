@@ -1,0 +1,161 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-color: white;
+    border: 3px solid blue;
+    width: 1200px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100px 76px auto 110px; 
+}
+
+header {
+    grid-column: span 12;
+    background: BLUE;
+   background: linear-gradient(to bottom, #2596be, #0000FF);
+}
+
+main {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    align-items: stretch;
+}
+
+.reversed-layout main {
+    grid-template-columns: 2fr 1fr; 
+}
+
+h1 a {
+    font-weight: normal;
+    color: lightblue;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+h1 a:hover {
+    color: white;
+}
+
+/** Nav **/
+
+nav {
+    grid-column: span 12;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  
+}
+
+nav li a {
+    color: lightblue;
+    font-weight: bold;
+    text-decoration: none;
+    background: BLUE;
+    background: linear-gradient(to bottom, #2596be, #0000FF);
+    display: block;
+    width: 275px;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 50px;
+    border: solid blue 3px;
+}
+
+nav a.active {
+    color: white;
+}
+
+nav li a:hover{
+    background: linear-gradient(to right, #2596be, #0000FF);
+}
+
+/** end of nav **/
+
+.bluebox, .blueboxabout {
+    padding: 20px; 
+    background-color: lightblue;
+    font-weight: bold;
+    text-align: justify;
+    grid-column: 1 / span 1; 
+}
+
+.whitebox, .whiteboxabout {
+    padding: 20px;
+    grid-column: 2 / span 1; 
+}
+
+.reversed-layout .blueboxabout {
+    grid-column: 2 / span 1;
+}
+
+.reversed-layout .whiteboxabout {
+    grid-column: 1 / span 1;
+}
+
+.gallery-layout main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+}
+
+.gallery-item {
+    grid-column: span 1; 
+    padding: 15px; 
+}
+
+.gallery-item img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+h2{
+    border-bottom: solid blue 3px;
+    font-weight: normal;
+    color:#0000FF;
+}
+
+.floatimg {
+    float: left;
+    margin-right: 20px; 
+    margin-bottom: 10px;
+    border: solid blue 3px;
+}
+
+.reversed-layout .floatimg {
+    float: right;
+    margin-left: 20px; 
+    margin-right: 0; 
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:red;
+}
+
+main a:hover {
+    color:darkred;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    margin-bottom: 0; 
+}
+
+footer {
+    grid-column: span 12;
+    background-color: red;
+    border-top:solid  blue 3px;
+}
+
+footer img{
+    padding: 10px;
+}

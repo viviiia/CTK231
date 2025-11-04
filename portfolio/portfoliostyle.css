@@ -30,6 +30,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 400; 
   font-size: 100px; 
+    text-shadow: 2px 2px 2px #9c9c9c; /* x, y, blur, color */
 }
 
 nav {
@@ -63,6 +64,9 @@ nav li a.resume {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 10px;
+    box-shadow: 10px 10px 10px #999; 
+    border-radius: 10px;
+    transition: background-color 0.5s, width 2.0s, color 2.0s;
 }
 
 nav li a.resume:hover {
@@ -91,6 +95,7 @@ nav ul li.dropdown .dropdown-content {
   margin: 0; 
   top: 100%; 
   left: 0; 
+  
 }
 
 nav ul li.dropdown .dropdown-content li a {
@@ -100,6 +105,7 @@ nav ul li.dropdown .dropdown-content li a {
   display: block; 
   text-align: left; 
   font-size: 20px; 
+    transition: background-color 0.5s, width 2.0s, color 2.0s;
 }
 
 nav ul li.dropdown .dropdown-content li a:hover {
@@ -122,6 +128,8 @@ nav ul li.dropdown:hover > a {
 }
 
 .social-icon-wrapper {
+  font-size: 30px;
+  color: white;
   display: flex;
   justify-content: center;    
   align-items: center;
@@ -131,23 +139,14 @@ nav ul li.dropdown:hover > a {
   background-color: #DBD1C1; 
   margin: 5px 0 0 5px;
   padding: 10px;
+    box-shadow: 10px 10px 10px #999; 
+    transition: background-color 0.5s, width 2.0s, color 2.0s;
 }
 
 a:hover .social-icon-wrapper {
   background-color: #a0988a; 
   cursor: pointer;
 }
-
-#linkedin-icon{
-  width: 25px; 
-  height: auto;  
-}
-
-#behance-icon {
-  width: 30px; 
-  height: auto;
-}
-
 
 main {
   grid-column: span 12; 
@@ -169,6 +168,8 @@ main {
   width: calc(100%); 
   margin: 0 24 0 -24px; 
   grid-column: 2 / 12; 
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #999; /* x, y, blur, color */
 }
 
 #hero-statement {
@@ -192,12 +193,15 @@ main {
   background-color: #F2E7D7; 
   background-image: url('diamond-pattern.png'); 
   background-repeat: repeat;
+    border-radius: 10px;
+  box-shadow: 10px 10px 10px #999; /* x, y, blur, color */
 }
 
 #vivia-portrait {
   height: auto;
   border: 15px solid #F2E7D7; 
   grid-column: 1 / 2;
+    border-radius: 10px;
 }
 
 .about-me-text {
@@ -214,11 +218,13 @@ main {
 .about-me-text h3 {
   background-color: #DBD1C1;
   padding: 15px;
+    border-radius: 10px;
 }
 
 .about-me-text p {
   background-color: #DBD1C1;
   padding: 20px;
+    border-radius: 10px;
 }
 
 footer {

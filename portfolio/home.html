@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Vivia Rolon</title>
     <link href="portfoliostyle.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <div id="wrapper">
@@ -24,12 +28,12 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/vivia-rolon-8487352b5/"target="_blank">
                     <span class="social-icon-wrapper">
-                        <img id="linkedin-icon" src="images/linkedin.png" alt="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
                     </span>
                 </a>
                 <a href="https://www.behance.net/viviarolon" target="_blank">
                     <span class="social-icon-wrapper">
-                        <img id="behance-icon" src="images/behance.png" alt="Behance">
+                        <i class="bi bi-behance"></i>
                     </span>
                 </a>
             </div>
@@ -37,9 +41,20 @@
 
         <main>
             <section class="hero-section">
+                <!-- ADD BACK LATER
                 <img id="home-painting" src="images/homepainting.png" alt="Spring Thaw Painting">
-                <h2 id="hero-statement">Creative Technologies Student Exploring UI/UX Design, Painter, Apple Certified IT Repair Technician</h2>
-            </section>
+                -->
+              
+              <!-- YOUTUBE EMBED ERROR CODE 153 "VIDEO PLAYER CONFIGURATION ERROR"
+                  <iframe id="home-painting" width="560" height="315" src="https://www.youtube.com/embed/1bqp9grt-qo?si=HezfwWrf6cMSoxsP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             -->
+
+                <video id="home-painting" width="640" height="360" autoplay controls loop preload="auto" >
+                    <source src="TestVideo.mov" type="video/mp4">
+                </video>
+                    <h2 id="hero-statement">Creative Technologies Student Exploring UI/UX Design, Painter, Apple Certified IT Repair Technician</h2>
+           
+                </section>
         </main>
 
         <div id="about-me-wrapper">

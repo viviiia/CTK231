@@ -153,6 +153,13 @@ main {
   grid-row: 2;
 }
 
+.SumiHero {
+grid-template-columns: 2/12;
+text-align: center;
+padding-left: 100px;
+padding-right: 100px;
+}
+
 
 .hero-section {
   display: grid; 
@@ -160,6 +167,31 @@ main {
   grid-column-gap: 24px; 
   margin: 0;
   grid-column: span 12;
+}
+
+.SumiHero h2 {
+  font-size: 39px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: 3px;
+}
+
+.SumiHero p {
+  color: #7E7E7E;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.bold-font {
+  color: #9B0E01;
+  font-weight: bold;
+}
+
+#gallery-section {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #home-painting {
@@ -229,7 +261,6 @@ main {
 
 footer {
   grid-column: span 12;
-  grid-row: 4;
   display: flex;
   justify-content: space-between; 
   align-items: center;

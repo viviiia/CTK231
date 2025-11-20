@@ -121,32 +121,6 @@ nav ul li.dropdown:hover > a {
   color: #8F3934; 
 }
 
-.social-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.social-icon-wrapper {
-  font-size: 30px;
-  color: white;
-  display: flex;
-  justify-content: center;    
-  align-items: center;
-  width: 25px;      
-  height: 25px;
-  border-radius: 50%; 
-  background-color: #DBD1C1; 
-  margin: 5px 0 0 5px;
-  padding: 10px;
-    box-shadow: 10px 10px 10px #999; 
-    transition: background-color 0.5s, width 2.0s, color 2.0s;
-}
-
-a:hover .social-icon-wrapper {
-  background-color: #a0988a; 
-  cursor: pointer;
-}
 
 main {
   grid-column: span 12; 
@@ -277,6 +251,33 @@ footer {
 
 .logo{
   margin-right: 64px;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 74px;
+}
+
+.social-icon-wrapper {
+  font-size: 30px;
+  color: #555555;
+  display: flex;
+  justify-content: center;    
+  align-items: center;
+  width: 25px;      
+  height: 25px;
+  margin: 5px 0 0 5px;
+  padding: 10px;
+    text-shadow: 2px 2px 2px #999; 
+    transition: color 0.5s, width 2.0s, color 2.0s;
+}
+
+a:hover .social-icon-wrapper {
+  color: #9B0E01; 
+  cursor: pointer;
 }
 
 .dummycolumn {

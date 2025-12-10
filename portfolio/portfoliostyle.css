@@ -6,6 +6,13 @@
 body {
   background-color: #A3A194;
   font-family: 'kosugi', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body.works main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
 }
 
 #wrapper {
@@ -179,9 +186,9 @@ nav ul li.dropdown:hover .dropdown-content {
   padding: 24px 0;
   width: 100%;
   max-width: 1200px;
-  transform: translateY(-50%);
+
   padding: 0 5%;
-  margin: 50px 0;
+  margin: 50px auto;
 
   @media (max-width: 640px) {
     top: 0;
@@ -217,6 +224,7 @@ nav ul li.dropdown:hover .dropdown-content {
   animation: riseIn 1s ease-out forwards;
   opacity: 0;
   transform: translateY(40px); 
+  color:#DBD1C1;
 
   
   
@@ -334,15 +342,7 @@ nav ul li.dropdown:hover .dropdown-content {
       box-shadow: 0 0 48px rgba(#c3b8a7, 0.1);
     }
     
-    &.comp {
-      color: #c3b8a7;
-      box-shadow: 0 0 48px rgba(#c3b8a7, 0.1);
-    }
-    
-    &.digital3d {
-      color: #c3b8a7;
-      box-shadow: 0 0 48px rgba(#c3b8a7, 0.1);
-    }
+
     
     footer span.color-value {
       color: currentColor !important;
@@ -350,21 +350,47 @@ nav ul li.dropdown:hover .dropdown-content {
   }
 }
 
-/* --- NEW CSS ADDITIONS FOR THE IMAGE CARD AND "SEE MORE" HOVER --- */
-
-/* Targets the specific card with the new HTML class 'sephiroth-card' */
 .cutebox.sephiroth-card .cutebox-bg {
-  /* Set the image as the background, make it fit the container */
   background: url('digitalpaintings/Sephiroth.png') no-repeat center center;
   background-size: cover; 
 }
 
-.cutebox.programming  .cutebox-bg {
+.cutebox.compprogramming  .cutebox-bg {
   background: url('images/programming.png') no-repeat center;
   background-size: cover;
 }
 
-/* Style the "See More" text container overlay */
+.cutebox.digital3d  .cutebox-bg {
+  background: url('images/3ddesign.png') no-repeat center;
+  background-size: cover;
+}
+
+.cutebox.webdesign  .cutebox-bg {
+  background: url('images/webdev.png') no-repeat center;
+  background-size: cover;
+}
+
+.cutebox.animation  .cutebox-bg {
+  background: url('images/animation.gif') no-repeat center;
+  background-size: cover;
+}
+
+.cutebox.sounddesign  .cutebox-bg {
+  background: url('images/sounddesign.png') no-repeat center;
+  background-size: cover;
+}
+
+.cutebox.motiongraphics  .cutebox-bg {
+  background: url('images/motion.gif') no-repeat center;
+  background-size: cover;
+}
+
+.cutebox  .cutebox-bg {
+
+  background-size: cover;
+}
+
+
 .see-more-text {
     position: absolute;
     top: 0;
@@ -372,21 +398,20 @@ nav ul li.dropdown:hover .dropdown-content {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
+    justify-content: center; 
+    align-items: center;     
     color: white;
     font-size: 1.2em;
     font-weight: bold;
-    opacity: 0;              /* Hidden by default */
-    background-color: rgba(0, 0, 0, 0.4); /* The dark tint for the hover effect */
+    opacity: 0;              
+    background-color: rgba(0, 0, 0, 0.4); 
     transition: opacity 0.4s ease;
-    z-index: 2; /* Ensures text and tint are above the background image */
-    pointer-events: none; /* Allows clicks to pass through the text div to the underlying anchor link */
+    z-index: 2; 
+    pointer-events: none; 
 }
 
-/* When the link (.card-image-link) is hovered, show the text overlay (.see-more-text) */
 .card-image-link:hover .see-more-text {
-    opacity: 1; /* Fade in the "See More" message and tint */
+    opacity: 1; 
 }
 
 
@@ -467,13 +492,83 @@ padding-right: 100px;
 }
 
 
-/**Works Page**/
+/** CTK Page**/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  padding: 0;
+  width: 80%;
+  max-width: 800px;
+  background-color: #F8EFE1;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #999;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-image {
+  display: none;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-controls {
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel-controls button {
+  background-color: #8F3934;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-controls button:hover {
+  background-color: #555;
+}
 
 
-/**End of Works**/
+/**End of CTK**/
 
 .bold-font {
-  color: #9B0E01;
+  color: #8F3934;
   font-weight: bold;
 }
 
@@ -537,6 +632,7 @@ padding-right: 100px;
   padding-left: 60px;
   color: white;
   font-size: large;
+  text-shadow: #555555 1px 1px 5px;
 }
 
 .about-me-text h3 {
@@ -550,6 +646,90 @@ padding-right: 100px;
   padding: 20px;
     border-radius: 10px;
 }
+
+.workssumi {
+  animation: riseIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px); 
+  font-weight: 300; 
+  margin: 20px 0 40px; 
+  padding: 0; 
+  grid-column: 2 / 9; 
+}
+
+.workssumi h2 {
+  font-size: 40px;
+}
+
+.workssumi p {
+  font-size: 20px;
+  padding-left:24px;
+  padding-right: 124px;
+}
+
+.workssumi a {
+  font-size: 30px;
+  padding-left: 24px;
+  color: #8F3934;
+}
+
+#workssumiimage {
+  animation: riseIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px); 
+  width: 200px;
+  grid-column: 9/12;
+  margin-top: 50px;
+  border:#DBD1C1 solid 6px;
+  border-radius: 10px;
+  box-shadow: #555555 1px 1px 6px ;
+}
+
+#worksctkimage {
+  animation: riseIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px); 
+  margin-top: 100px;
+  width: 400px;
+  grid-column: 2/5;
+  border:#DBD1C1 solid 6px;
+  border-radius: 10px;
+    box-shadow: #555555 1px 1px 6px ;
+}
+
+.worksctk {
+  animation: riseIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px); 
+  font-weight: 300; 
+  margin: 20px 0 40px; 
+  padding: 0; 
+  grid-column: 6 / 12; 
+  text-align: right;
+}
+
+.worksctk h2{
+  font-size: 40px;
+}
+
+.worksctk p {
+    font-size: 20px;
+  padding-right: 24px;
+}
+
+.worksctk ul {
+    font-size: 20px;
+  text-align: left;
+  grid-column: 8/12;
+  padding-left: 120px;
+}
+
+.worksctk a {
+    font-size: 30px;
+  color: #8F3934;
+}
+
+
 
 footer {
   grid-column: span 12;
@@ -570,6 +750,8 @@ footer {
 .logo{
   margin-right: 64px;
 }
+
+
 
 /**animations**/
 
@@ -616,6 +798,10 @@ footer {
   justify-content: flex-end;
   align-items: center;
   margin-right: 74px;
+}
+
+.social-links a{
+  padding-left: 12px;
 }
 
 .social-icon-wrapper {
